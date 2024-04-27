@@ -7,11 +7,11 @@ import { Skeleton } from "../../components/Skeleton/Skeleton"
 
 export const Main = () => {
     const [news, setNews] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                setIsLoading(false);
+                setIsLoading(true);
                 const responce = await getNews();
                 setNews(responce.news);
             } catch (error) {
