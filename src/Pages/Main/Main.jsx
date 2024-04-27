@@ -15,9 +15,9 @@ export const Main = () => {
 
     const fetchNews = async (currentPage) => {
         try {
-            setIsLoading(false);
             const responce = await getNews(currentPage, pageSize);
             setNews(responce.news);
+            setIsLoading(false);
         } catch (error) {
             console.log(error)
         }
