@@ -10,7 +10,7 @@ export const Skeleton = ({ count = 1, type = 'banner' }) => {
                         <li key={index} className={type === 'banner' ? styles.banner : styles.item}></li>
                     })}
                 </ul>
-                : <li className={type === 'banner' ? styles.banner : styles.item}></li>}
+                : <div className={type === 'banner' ? styles.banner : styles.item}></div>}
         </>
     )
 }
