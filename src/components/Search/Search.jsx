@@ -1,16 +1,17 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
-export const Search = ({ keywords, setkeywords }) => {
-
+const Search = ({ keywords, setKeywords }) => {
     return (
         <div className={styles.search}>
             <input
                 type="text"
                 value={keywords}
+                onChange={(e) => setKeywords(e.target.value)}
                 className={styles.input}
-                onChange={(e) => setkeywords(e.target.value)}
-                placeholder="Search..."
+                placeholder="Javascript"
             />
         </div>
-    )
-}
+    );
+};
+
+export default Search;
