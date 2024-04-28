@@ -1,8 +1,7 @@
-import { Main } from "./Pages/Main/Main"
-import { Header } from "./components/Header/Header"
+import Header from "./components/Header/Header";
+import Main from "./Pages/Main/Main";
 
-export const App = () => {
-
+function App() {
   return (
     <>
       <Header />
@@ -10,5 +9,7 @@ export const App = () => {
         <Main />
       </div>
     </>
-  )
+  );
 }
+
+export default App;
