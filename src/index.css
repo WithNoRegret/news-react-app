@@ -13,3 +13,23 @@
     padding: 24px;
     min-height: 100vh;
 }
+
+.app.dark .container {
+    background-color: #23272F;
+}
+
+.app.light .container {
+    background-color: white;
+}
+
+.app.dark p,
+.app.dark h1,
+.app.dark h3 {
+    color: #F6F7F9;
+}
+
+.app.light p,
+.app.light h1,
+.app.light h3 {
+    color: black;
+}
