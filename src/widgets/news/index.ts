@@ -1,4 +1,4 @@
-import BannersList from "./ui/BannersList/BannersList";
 import NewsList from "./ui/NewsList/NewsList";
+import NewsFilters from "./ui/NewsFilters/NewsFilters";
 
-export { BannersList, NewsList }
+export { NewsList, NewsFilters }
